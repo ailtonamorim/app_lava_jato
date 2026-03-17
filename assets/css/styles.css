@@ -323,6 +323,32 @@ textarea:focus {
   background-size: 44px 44px;
 }
 
+.real-map::before {
+  display: none;
+}
+
+.real-map {
+  height: 62vh;
+}
+
+.leaflet-container {
+  border-radius: var(--radius);
+}
+
+.user-marker-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #27c3ff;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 8px rgba(39, 195, 255, 0.25);
+}
+
+.user-marker-wrapper {
+  background: transparent;
+  border: 0;
+}
+
 .map-pin {
   position: absolute;
   width: 40px;
@@ -347,6 +373,13 @@ textarea:focus {
   width: min(540px, 94%);
   padding: 16px;
   position: relative;
+}
+
+.map-action-row {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .profile-hero {
@@ -631,6 +664,10 @@ textarea:focus {
 
   .map-canvas {
     min-height: 56vh;
+  }
+
+  .real-map {
+    height: 56vh;
   }
 
   .map-bottom-card {
